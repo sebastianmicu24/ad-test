@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedRounds | Clinical Cardiology Notes</title>
+    <style>
+        /* CSS STYLES - Makes the site look clean */
+        :root {
+            --primary: #0056b3;
+            --light-bg: #f4f7f6;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+        }
+        header {
+            background-color: white;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        header h1 { margin: 0; color: var(--primary); }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            display: flex; /* Creates the Main Content + Sidebar layout */
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+        }
+
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .sidebar-widget {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* --- AD PLACEHOLDERS STYLES --- */
+        .ad-slot {
+            background-color: #e9ecef;
+            border: 2px dashed #adb5bd;
+            color: #6c757d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .ad-banner { height: 100px; width: 100%; }
+        .ad-sidebar { height: 250px; width: 100%; }
+
+        h2 { color: var(--primary); margin-top: 30px; }
+        .sign-box {
+            background: #eef2f5;
+            padding: 15px;
+            border-left: 4px solid var(--primary);
+            margin: 10px 0;
+        }
+    </style>
+
+    <!-- 
+      === ADSENSE HEADER SCRIPT GOES HERE === 
+      If you turn on "Auto Ads" in Google, paste the script right here.
+    -->
+
+</head>
+<body>
+
+    <header>
+        <h1>MedRounds</h1>
+        <p>Clinical Pearls for Medical Students</p>
+    </header>
+
+    <div class="container">
+        <!-- LEFT SIDE: BLOG POST -->
+        <main class="main-content">
+            <article>
+                <h1>Eponymous Signs of Aortic Regurgitation</h1>
+                <p><em>Posted on October 24, 2023 by Dr. Smith</em></p>
+                <hr>
+
+                <p>Aortic Regurgitation (AR) is famous in clinical medicine for presenting with a wide pulse pressure. This hyperdynamic circulation leads to a variety of physical signs that have been named after the physicians who first described them. While some are historical curiosities, others remain useful in bedside examinations.</p>
+
+                <!-- === AD SLOT 1 (In-Article) === -->
+                <!-- Replace this div with your Manual Ad Unit code -->
+                <div class="ad-slot ad-banner">
+                    ADVERTISEMENT BANNER (728x90)
+                </div>
+
+                <h2>1. De Musset's Sign</h2>
+                <div class="sign-box">
+                    <strong>Observation:</strong> Rhythmic bobbing of the head in synchrony with the heart beat.
+                </div>
+                <p>Named after the French poet Alfred de Musset, this sign is a manifestation of the vigorous systolic ejection of blood into the neck vessels. It is subtle in mild cases but can be quite pronounced in severe AR.</p>
+
+                <h2>2. Müller's Sign</h2>
+                <div class="sign-box">
+                    <strong>Observation:</strong> Systolic pulsation of the uvula.
+                </div>
+                <p>When examining the oropharynx, one may observe the uvula bobbing or pulsating. This is caused by the large stroke volume causing widespread transmission of the pulse wave to the soft tissues of the throat.</p>
+
+                <h2>3. Quincke's Pulse</h2>
+                <div class="sign-box">
+                    <strong>Observation:</strong> Capillary pulsation visible in the nail beds.
+                </div>
+                <p>To elicit this sign, apply light pressure to the tip of the patient's fingernail. In positive cases, you will see the "red zone" and "white zone" (blanching) shifting back and forth with every heartbeat. It represents the rapid filling and emptying of the capillary bed.</p>
+
+                <!-- === AD SLOT 2 (In-Article) === -->
+                <!-- Replace this div with your Manual Ad Unit code -->
+                <div class="ad-slot ad-banner">
+                    ADVERTISEMENT BANNER (728x90)
+                </div>
+
+                <h2>4. Landolfi's Sign</h2>
+                <div class="sign-box">
+                    <strong>Observation:</strong> Systolic contraction and diastolic dilation of the pupil.
+                </div>
+                <p>Often referred to as "cardiac hippus," this is a rare sign where the pupil appears to change size synchronously with the cardiac cycle. It is thought to be related to the high stroke volume affecting the iris vasculature.</p>
+
+                <h3>Conclusion</h3>
+                <p>While an echocardiogram is the gold standard for diagnosis, recognizing these signs allows clinicians to gauge the severity of the valvular incompetence at the bedside.</p>
+            </article>
+        </main>
+
+        <!-- RIGHT SIDE: SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>About</h3>
+                <p>This is a demo site to test Vercel deployments and AdSense integration.</p>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>Sponsors</h3>
+                
+                <!-- === AD SLOT 3 (Sidebar) === -->
+                <!-- Replace this div with your Manual Ad Unit code -->
+                <div class="ad-slot ad-sidebar">
+                    ADVERTISEMENT (300x250)
+                </div>
+                
+            </div>
+        </aside>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; font-size: 0.8rem; color: #777;">
+        &copy; 2024 MedRounds Demo.
+    </footer>
+
+</body>
+</html>
